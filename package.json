@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "webpack": "webpack",
-    "build": "npm run webpack -- --env.mode production",
+    "build_it": "npm run webpack -- --env.mode production",
     "dev": "webpack-dev-server --env.mode development --hot",
     "profile": "webpack --env.mode production --profile --json > compilation-stats.json"
   },
