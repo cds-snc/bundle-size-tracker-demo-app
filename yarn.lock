@@ -1302,7 +1302,7 @@ caniuse-lite@^1.0.30000921:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000925.tgz#f1a3b9aae2a83071b1eccfa39959d72440409b08"
   integrity sha512-zcYupoUxtW46rOikuDF7vfL9N1Qe9ZuUBTz3n3q8fFsoJIs/h9UN6Vg/0QpjsmvImXw9mVc3g+ZBfqvUz/iALA==
 
-cds-size-plugin@1.1.2:
+cds-size-plugin@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/cds-size-plugin/-/cds-size-plugin-1.1.2.tgz#4d928caa79306f660896361c33204963b848614d"
   integrity sha512-xcOCr2mjXuI6iGF2tiuH3NT/Mz/svtABOaeMyk531w8D0b1gBYSmOZ08bVESCCkCQdHRMpypyau/xrIN966McQ==
