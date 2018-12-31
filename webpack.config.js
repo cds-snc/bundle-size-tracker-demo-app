@@ -10,11 +10,27 @@ const title = "hello";
 
 module.exports = ({ mode = "production" }) => {
   return {
-    entry: "./src/client.js",
+    entry: {
+      client: ["./src/client.js"],
+      vendor: ["react", "react-dom"]
+    },
     mode: mode,
     output: {
       path: path.resolve(__dirname, "dist"),
-      filename: "bundle.js"
+      filename: "bundle.js",
+      chunkFilename: "[name].[chunkhash].bundle.js"
+    },
+    optimization: {
+      runtimeChunk: "single",
+      splitChunks: {
+        cacheGroups: {
+          vendors: {
+            name: "vendor",
+            enforce: true,
+            chunks: "all"
+          }
+        }
+      }
     },
     plugins: [
       new CleanWebpackPlugin("dist"),
