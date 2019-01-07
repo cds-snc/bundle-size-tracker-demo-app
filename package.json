@@ -11,7 +11,8 @@
     "webpack": "webpack",
     "build_it": "npm run webpack -- --env.mode production",
     "dev": "webpack-dev-server --env.mode development --hot",
-    "profile": "webpack --env.mode production --profile --json > compilation-stats.json"
+    "profile": "webpack --env.mode production --profile --json > compilation-stats.json",
+    "start" : "npm run build_it && node index.js"
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
@@ -33,8 +34,7 @@
     "react-window": "^1.5.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
     "cds-size-plugin": "1.1.3",

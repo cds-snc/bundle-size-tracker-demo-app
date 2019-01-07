@@ -1,5 +1,5 @@
 import React from "react";
-import css from "../styles.css";
+//import css from "../styles.css";
 import { FixedSizeList as List } from "react-window";
 
 const Row = ({ index, isScrolling, style }) => (
