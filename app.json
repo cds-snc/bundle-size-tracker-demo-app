@@ -1,0 +1,16 @@
+{
+  "name": "bundle-size-tracker-demo-app",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+
+  ]
+}
