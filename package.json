@@ -4,40 +4,30 @@
     "node": ">=8.0.0"
   },
   "private": true,
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.0.0",
   "license": "MIT",
-  "scripts": {
-    "webpack": "webpack",
-    "build_it": "npm run webpack -- --env.mode production",
-    "dev": "webpack-dev-server --env.mode development --hot",
-    "profile": "webpack --env.mode production --profile --json > compilation-stats.json",
-    "start" : "npm run build_it && node index.js"
-  },
   "dependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^1.0.0",
-    "copy-webpack-plugin": "^4.6.0",
-    "css-loader": "^2.1.0",
-    "esm": "^3.0.84",
-    "express": "^4.16.4",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "moment": "^2.23.0",
     "react": "^16.7.0",
-    "react-bootstrap": "^0.32.4",
+    "react-app-rewired": "2.0.1",
     "react-dom": "^16.7.0",
-    "react-window": "^1.5.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.1.2"
+    "react-scripts": "2.1.3",
+    "cds-size-plugin": "^1.1.3"
   },
-  "devDependencies": {
-    "cds-size-plugin": "1.1.3",
-    "webpack-dev-server": "^3.1.14"
-  }
+  "scripts": {
+    "dev": "react-app-rewired start",
+    "build_it": "GENERATE_SOURCEMAP=false react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start": "npm run build_it && node index.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {}
 }
