@@ -4,7 +4,7 @@
     "node": ">=8.0.0"
   },
   "private": true,
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "dependencies": {
     "cds-size-plugin": "^1.1.3",
